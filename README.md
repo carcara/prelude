@@ -12,4 +12,4 @@ Prelude is compatible **ONLY with GNU Emacs 24.x**. In general you're
 advised to always run Prelude with the latest Emacs - currently
 **24.3**.
 
-**Just a personal fork from batsov's original [prelude](https://github.com/bbatsov/prelude)
+**Just a personal fork from batsov's original [prelude](https://github.com/bbatsov/prelude)**
