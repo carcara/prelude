@@ -75,7 +75,7 @@ Will only occur if prelude-whitespace is also enabled."
 ;; personal indentation width, while maintaining the style (and
 ;; meaning) of any files you load.
 (setq-default indent-tabs-mode nil)   ;; don't use tabs to indent
-(setq-default tab-width 8)            ;; but maintain correct appearance
+(setq-default tab-width 4)            ;; but maintain correct appearance
 
 ;; delete the selection with a keypress
 (delete-selection-mode t)
@@ -382,7 +382,7 @@ indent yanked text (with prefix arg don't indent)."
 ;; whitespace-mode config
 (require 'whitespace)
 (setq whitespace-line-column 80) ;; limit line length
-(setq whitespace-style '(face tabs empty trailing lines-tail))
+(setq whitespace-style '(face tabs empty trailing tab-mark))
 
 ;; saner regex syntax
 (require 're-builder)

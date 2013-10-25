@@ -32,6 +32,9 @@
 ;; Boston, MA 02110-1301, USA.
 
 ;;; Code:
+(require 'server)
+(server-start)
+
 (defvar current-user
       (getenv
        (if (equal system-type 'windows-nt) "USERNAME" "USER")))
