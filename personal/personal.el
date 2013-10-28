@@ -14,4 +14,7 @@
                   tab-width 2
                   indent-tabs-mode nil)))
 
+(load "ninja-mode")
+(load "cmake-mode")
+
 ;;; personal.el ends here
