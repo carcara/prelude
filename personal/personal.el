@@ -1,10 +1,10 @@
 ; Theme setup
+(setq default-frame-alist '((font . "Droid Sans Mono-11")))
 (disable-theme 'zenburn)
 (load-theme 'solarized-dark t)
 
 (setq org-log-done nil)
 (setq prelude-flyspell nil)
-(flx-ido-mode -1)
 
 (projectile-global-mode)
 
