@@ -8,6 +8,8 @@
 
 (projectile-global-mode)
 
+(setq ediff-split-window-function 'split-window-horizontally)
+
 (add-hook 'java-mode-hook
           (lambda ()
             (setq c-basic-offset 2
