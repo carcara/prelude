@@ -6,6 +6,9 @@
 (setq org-log-done nil)
 (setq prelude-flyspell nil)
 
+(prelude-require-package 'yasnippet)
+(yas-global-mode +1)
+
 (projectile-global-mode)
 
 (setq ediff-split-window-function 'split-window-horizontally)
