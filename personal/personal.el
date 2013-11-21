@@ -1,7 +1,9 @@
-; Theme setup
+;; Theme setup
 (setq default-frame-alist '((font . "Droid Sans Mono-11")))
 (disable-theme 'zenburn)
-(load-theme 'solarized-dark t)
+(load-theme 'ample t)
+(setq scroll-bar-mode -1)
+
 
 (setq org-log-done nil)
 (setq prelude-flyspell nil)
@@ -31,9 +33,15 @@
 
 (add-hook 'js-mode-hook
           (lambda ()
-            (setq c-basic-offset 2
+            (setq c-basic-offset 1
                   tab-width 2
                   indent-tabs-mode t)
             (smart-tabs-mode-enable)
             (smart-tabs-advice c-indent-line c-basic-offset)
             (smart-tabs-advice c-indent-region c-basic-offset)))
+
+(add-hook 'lua-mode-hook
+          (lambda ()
+            (setq lua-indent-level 2
+                  tab-width 2
+                  indent-tabs-mode t)))
