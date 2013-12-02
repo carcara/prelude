@@ -2,7 +2,7 @@
 (setq default-frame-alist '((font . "Droid Sans Mono-11")))
 (disable-theme 'zenburn)
 (load-theme 'ample t)
-(setq scroll-bar-mode -1)
+(scroll-bar-mode -1)
 
 
 (setq org-log-done nil)
