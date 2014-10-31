@@ -4,6 +4,9 @@
 (load-theme 'ample t)
 (scroll-bar-mode -1)
 
+;; Emacs Speaks Statistics
+(setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
+(require 'ess-site)
 
 (setq org-log-done nil)
 (setq prelude-flyspell nil)
@@ -29,5 +32,4 @@
 (add-hook 'lua-mode-hook
           (lambda ()
             (setq lua-indent-level 2
-                  tab-width 2
-                  indent-tabs-mode t)))
+                  tab-width 2)))
