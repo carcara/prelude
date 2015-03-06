@@ -4,6 +4,8 @@
 (load-theme 'ample t)
 (scroll-bar-mode -1)
 
+(autoload 'cobol-mode "cobol-mode" "A major mode for editing ANSI Cobol/Scobol files." t nil)
+
 ;; Emacs Speaks Statistics
 (setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
 (require 'ess-site)
