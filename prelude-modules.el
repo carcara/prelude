@@ -7,7 +7,8 @@
 (require 'prelude-org) ;; Org-mode helps you keep TODO lists, notes and more
 (require 'prelude-shell)
 (require 'prelude-xml)
-
+(require 'prelude-ruby)
+(require 'prelude-go)
 
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
 
