@@ -1,5 +1,5 @@
 ;; Enabled modules
-(require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
+;; (require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
 (require 'prelude-c)
 (require 'prelude-company)
 (require 'prelude-js)
@@ -9,6 +9,9 @@
 (require 'prelude-xml)
 (require 'prelude-ruby)
 (require 'prelude-go)
+(require 'prelude-helm) ;; Interface for narrowing and search
+(require 'prelude-helm-everywhere) ;; Enable Helm everywhere
+
 
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
 
