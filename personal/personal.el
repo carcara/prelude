@@ -26,6 +26,15 @@
                   tab-width 8
                   c-basic-offset 4)))
 
+;; Eclim setup
+(require eclim)
+(require eclimd)
+(global-eclim-mode)
+(setq
+ eclim-eclipse-dirs '("/opt/eclipse")
+ eclim-executable "/opt/eclipse/eclim")
+
+
 ;; (autoload 'cobol-mode "cobol-mode"
 ;;   "A major mode for editing ANSI Cobol/Scobol files." t nil)
 
