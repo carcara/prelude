@@ -6,8 +6,8 @@
       prelude-flyspell nil
       prelude-clean-whitespace-on-save nil
       ediff-split-window-function 'split-window-horizontally
-      split-height-threshold nil
-      split-width-threshold 0)
+      ;; split-height-threshold nil
+      split-width-threshold 80)
 
 ;; Yasnippet
 (prelude-require-package 'yasnippet)
@@ -23,16 +23,20 @@
           (lambda ()
             (setq c-default "linux"
                   indent-tabs-mode t
-                  tab-width 8
+                  tab-width 4
                   c-basic-offset 4)))
 
+(add-hook 'nxml-mode-hook
+          (lambda ()
+            (setq nxml-child-indent 2)
+            (setq nxml-attribute-indent 2)))
 ;; Eclim setup
-(require eclim)
-(require eclimd)
-(global-eclim-mode)
-(setq
- eclim-eclipse-dirs '("/opt/eclipse")
- eclim-executable "/opt/eclipse/eclim")
+;; (require eclim)
+;; (require eclimd)
+;; (global-eclim-mode)
+;; (setq
+;;  eclim-eclipse-dirs '("/opt/eclipse")
+;;  eclim-executable "/opt/eclipse/eclim")
 
 
 ;; (autoload 'cobol-mode "cobol-mode"
