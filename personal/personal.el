@@ -5,9 +5,10 @@
 (setq org-log-done nil
       prelude-flyspell nil
       prelude-clean-whitespace-on-save nil
-      ediff-split-window-function 'split-window-horizontally
-      ;; split-height-threshold nil
-      split-width-threshold 80)
+      ediff-split-window-function 'split-window-horizontally)
+
+;; (setq split-height-threshold 80
+;;       split-width-threshold 160)
 
 ;; Yasnippet
 (prelude-require-package 'yasnippet)
@@ -18,6 +19,7 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;; Enable smart tabs mode
+(prelude-require-package 'smart-tabs-mode)
 (smart-tabs-insinuate 'c)
 (add-hook 'c-mode-hook
           (lambda ()
@@ -26,6 +28,7 @@
                   tab-width 4
                   c-basic-offset 4)))
 
+;; XML
 (add-hook 'nxml-mode-hook
           (lambda ()
             (setq nxml-child-indent 2)
