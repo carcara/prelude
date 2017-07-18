@@ -35,7 +35,8 @@
                             company-go
                             go-eldoc
                             go-projectile
-                            gotest))
+                            gotest
+                            golint))
 
 (require 'go-projectile)
 
@@ -61,13 +62,14 @@
            (setq gofmt-command goimports)))
 
        ;; gofmt on save
-       ;; (add-hook 'before-save-hook 'gofmt-before-save nil t)
+       ;; gofmt on save(add-hook 'before-save-hook 'gofmt-before-save nil t)
 
        ;; stop whitespace being highlighted
        (whitespace-toggle-options '(tabs))
 
        ;; Company mode settings
        (set (make-local-variable 'company-backends) '(company-go))
+       (company-mode)
 
        ;; El-doc for Go
        (go-eldoc-setup)

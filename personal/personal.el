@@ -5,7 +5,8 @@
 (setq org-log-done nil
       prelude-flyspell nil
       prelude-clean-whitespace-on-save nil
-      ediff-split-window-function 'split-window-horizontally)
+      ediff-split-window-function 'split-window-horizontally
+      read-quoted-char-radix 16)
 
 ;; (setq split-height-threshold 80
 ;;       split-width-threshold 160)
