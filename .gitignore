@@ -22,4 +22,5 @@ tramp
 /var/pcache
 .emacs.desktop
 .emacs.desktop.lock
+network-security.data
 /srecode-map.el
