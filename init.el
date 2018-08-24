@@ -33,8 +33,8 @@
 
 ;;; Code:
 
-(require 'server)
-(server-start)
+;; (require 'server)
+;; (server-start)
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,

@@ -21,7 +21,7 @@
 
 ;; Enable smart tabs mode
 (prelude-require-package 'smart-tabs-mode)
-(smart-tabs-insinuate 'c)
+(smart-tabs-insinuate 'c 'java)
 (add-hook 'c-mode-hook
           (lambda ()
             (setq c-default "linux"
@@ -34,25 +34,10 @@
           (lambda ()
             (setq nxml-child-indent 2)
             (setq nxml-attribute-indent 2)))
-;; Eclim setup
-;; (require eclim)
-;; (require eclimd)
-;; (global-eclim-mode)
-;; (setq
-;;  eclim-eclipse-dirs '("/opt/eclipse")
-;;  eclim-executable "/opt/eclipse/eclim")
 
-
-;; (autoload 'cobol-mode "cobol-mode"
-;;   "A major mode for editing ANSI Cobol/Scobol files." t nil)
-
-;; (autoload 'plantuml-mode "plantuml-mode"
-;;   "A major mode for editing plantuml files." t nil)
-
-;; (autoload 'octave-mode "octave-mode" nil t)
-;; (setq auto-mode-alist
-;;       (cons '("\\.m$" . octave-mode) auto-mode-alist))
-
-;; Emacs Speaks Statistics
-;; (setq load-path (cons "/usr/share/emacs/site-lisp/ess" load-path))
-;; (require 'ess-site)
+;; Java
+(add-hook 'java-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode t
+                  c-basic-offset 4
+                  tab-width 4)))
