@@ -36,6 +36,10 @@
 ;; (require 'server)
 ;; (server-start)
 
+(setq url-proxy-services '(("no_proxy" . "bb\\.com\\.br")
+                           ("http" . "localhost:3128")
+                           ("https" . "localhost:3128")))
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
