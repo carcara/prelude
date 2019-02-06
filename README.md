@@ -25,52 +25,6 @@ You can support the development of Prelude via
 [![Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/bbatsov/donate)
 [![Patreon](https://img.shields.io/badge/patreon-donate-orange.svg)](https://www.patreon.com/bbatsov)
 
-**Table of Contents**
-
-- [Fast Forward](#fast-forward)
-- [Installing Emacs](#installing-emacs)
-- [Installation](#installation)
-    - [Automated](#automated)
-        - [Via Curl](#via-curl)
-        - [Via Wget](#via-wget)
-    - [Manual](#manual)
-- [Updating Prelude](#updating-prelude)
-    - [Manual update](#manual-update)
-        - [Update all bundled packages](#update-all-bundled-packages)
-        - [Update Prelude's code](#update-preludes-code)
-        - [Restart Prelude](#restart-prelude)
-    - [Automatic update](#automatic-update)
-- [Enabling additional modules](#enabling-additional-modules)
-- [Running](#running)
-- [Getting to know Prelude](#getting-to-know-prelude)
-    - [Keymap](#keymap)
-        - [Global](#global)
-        - [Prelude Mode](#prelude-mode)
-        - [macOS modifier keys](#macos-modifier-keys)
-        - [Projectile](#projectile)
-        - [Helm](#helm)
-        - [Key-chords](#key-chords)
-            - [Disabling key-chords](#disabling-key-chords)
-    - [Cheatsheet](#cheatsheet)
-- [Automatic package installation](#automatic-package-installation)
-    - [Color Themes](#color-themes)
-    - [Personalizing](#personalizing)
-        - [Disabling whitespace-mode](#disabling-whitespace-mode)
-        - [Disable flyspell-mode](#disable-flyspell-mode)
-- [Caveats & Pitfalls](#caveats--pitfalls)
-    - [Updating bundled packages](#updating-bundled-packages)
-    - [Problems with flyspell-mode](#problems-with-flyspell-mode)
-    - [Ugly colors in the terminal Emacs version](#ugly-colors-in-the-terminal-emacs-version)
-    - [MELPA error on initial startup](#melpa-error-on-initial-startup)
-    - [Warnings on arrow navigation in editor buffers](#warnings-on-arrow-navigation-in-editor-buffers)
-    - [Customized C-a behavior](#customized-c-a-behavior)
-    - [Poor ido matching performance on large datasets](#poor-ido-matching-performance-on-large-datasets)
-    - [Windows compatibility](#windows-compatibility)
-- [Known issues](#known-issues)
-- [Support](#support)
-- [Contributors](#contributors)
-- [Bugs & Improvements](#bugs--improvements)
-
 ## Fast Forward
 
 Assuming you're using an Unix-like OS (`*BSD`, `GNU/Linux`, `macOS`, `Solaris`,
@@ -107,6 +61,10 @@ or back up your existing `.emacs.d` directory manually.
 Don't forget to adjust your `prelude-modules.el` file in your personal directory
 once the installation is done. By default most of the modules
 that ship with Prelude are not loaded.
+
+## User Manual
+
+Check out our [user manual](https://prelude.emacsredux.com) for more information.
 
 ## Known issues
 

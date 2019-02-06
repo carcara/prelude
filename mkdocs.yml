@@ -7,6 +7,10 @@ pages:
 - Installation: installation.md
 - Usage: usage.md
 - Configuration: configuration.md
+- Modules:
+    - Overview: modules/index.md
+    - ERC: modules/erc.md
+    - Python: modules/python.md
 - FAQ: faq.md
 - Troubleshooting: troubleshooting.md
 - Contributing: contributing.md

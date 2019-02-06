@@ -83,7 +83,7 @@ inside accordingly.
 
 ## Enabling additional modules
 
-By default most of the modules that ship with Prelude are not loaded. For more information on the functionality provided by these modules visit the [docs](modules/doc/README.md).
+By default most of the modules that ship with Prelude are not loaded. For more information on the functionality provided by these modules visit the [docs](modules/index.md).
 
 ```lisp
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
