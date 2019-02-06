@@ -1,4 +1,5 @@
 *~
+*.bck
 *.elc
 auto-save-list
 recentf
