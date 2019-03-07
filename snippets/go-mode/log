@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# contributer: Renato Fernandes de Queiroz <renatofq@gmail.com>
+# name: log
+# key: log
+# description: log.Printf snippet
+# --
+log.Printf("%+v$0\n",$1)

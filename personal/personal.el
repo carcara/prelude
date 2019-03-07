@@ -41,3 +41,6 @@
             (setq indent-tabs-mode t
                   c-basic-offset 4
                   tab-width 4)))
+
+;; Go mode
+(add-hook 'go-mode-hook #'lsp)
