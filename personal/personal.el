@@ -1,5 +1,5 @@
 ;; Theme setup
-(setq default-frame-alist '((font . "Source Code Pro-11")))
+(setq default-frame-alist '((font . "DejaVu Sans Mono-11")))
 (scroll-bar-mode -1)
 
 (setq org-log-done nil
@@ -28,6 +28,14 @@
                   indent-tabs-mode t
                   tab-width 4
                   c-basic-offset 4)))
+
+(add-hook 'java-mode-hook
+          (lambda ()
+            (setq c-basic-offset 4
+                  tab-width 4
+                  indent-tabs-mode t)))
+
+(setq ediff-diff-program "~/.local/bin/mydiff")
 
 ;; XML
 (add-hook 'nxml-mode-hook
