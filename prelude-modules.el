@@ -1,5 +1,6 @@
 ;; Enabled modules
 ;; (require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
+(require 'prelude-lsp)
 (require 'prelude-c)
 (require 'prelude-company)
 (require 'prelude-js)

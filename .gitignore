@@ -1,4 +1,5 @@
 *~
+*.bck
 *.elc
 auto-save-list
 recentf
@@ -27,3 +28,5 @@ prelude-cheatsheet.el
 prelude-cheatsheet.aux
 prelude-cheatsheet.log
 /srecode-map.el
+.lsp-session-v1
+transient/
