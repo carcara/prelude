@@ -1,5 +1,5 @@
 ;; Theme setup
-(setq default-frame-alist '((font . "DejaVu Sans Mono-11")))
+(setq default-frame-alist '((font . "Source Code Pro-11")))
 (scroll-bar-mode -1)
 
 (setq org-log-done nil
