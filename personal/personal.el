@@ -35,8 +35,6 @@
                   tab-width 4
                   indent-tabs-mode t)))
 
-(setq ediff-diff-program "~/.local/bin/mydiff")
-
 ;; XML
 (add-hook 'nxml-mode-hook
           (lambda ()
