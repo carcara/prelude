@@ -33,7 +33,7 @@
 ;;; Code:
 
 (require 'prelude-programming)
-(prelude-require-packages '(js2-mode json-mode))
+(prelude-require-packages '(js2-mode json-mode js2-refactor xref-js2))
 
 (require 'js2-mode)
 
@@ -46,7 +46,14 @@
     ;; electric-layout-mode doesn't play nice with smartparens
     (setq-local electric-layout-rules '((?\; . after)))
     (setq mode-name "JS2")
-    (js2-imenu-extras-mode +1))
+    (js2-imenu-extras-mode +1)
+    (js2-refactor-mode +1)
+    (js2r-add-keybindings-with-prefix "C-c C-r")
+    (define-key js2-mode-map (kbd "C-c C-k") #'js2r-kill)
+    ;; js-mode (which js2 is based on) binds "M-." which conflicts with xref, so
+    ;; unbind it.
+    (define-key js-mode-map (kbd "M-.") nil)
+    (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t))
 
   (setq prelude-js-mode-hook 'prelude-js-mode-defaults)
 

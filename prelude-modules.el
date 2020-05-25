@@ -10,6 +10,7 @@
 (require 'prelude-xml)
 (require 'prelude-ruby)
 (require 'prelude-go)
+(require 'prelude-web)
 (require 'prelude-helm) ;; Interface for narrowing and search
 (require 'prelude-helm-everywhere) ;; Enable Helm everywhere
 

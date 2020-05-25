@@ -29,12 +29,6 @@
                   tab-width 4
                   c-basic-offset 4)))
 
-(add-hook 'java-mode-hook
-          (lambda ()
-            (setq c-basic-offset 4
-                  tab-width 4
-                  indent-tabs-mode t)))
-
 ;; XML
 (add-hook 'nxml-mode-hook
           (lambda ()
@@ -47,6 +41,11 @@
             (setq indent-tabs-mode t
                   c-basic-offset 4
                   tab-width 4)))
+
+;; HTML
+(add-hook 'web-mode-hook
+          (lambda ()
+            (setq sgml-basic-offset 4)))
 
 ;; Go mode
 (add-hook 'go-mode-hook #'lsp)
