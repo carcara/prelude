@@ -19,6 +19,12 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 
+;; lsp-mode
+(require 'lsp-mode)
+(setq lsp-keymap-prefix "C-c ;")
+(setq lsp-ui-doc-enable nil)
+
+
 ;; Enable smart tabs mode
 (prelude-require-package 'smart-tabs-mode)
 (smart-tabs-insinuate 'c 'java)
@@ -47,5 +53,9 @@
           (lambda ()
             (setq sgml-basic-offset 4)))
 
-;; Go mode
-(add-hook 'go-mode-hook #'lsp)
+;; PlantUML
+(add-to-list 'auto-mode-alist '("\\.plantuml\\'" . plantuml-mode))
+(add-hook 'plantuml-mode-hook
+          (lambda ()
+            (setq plantuml-default-exec-mode 'executable)))
+
